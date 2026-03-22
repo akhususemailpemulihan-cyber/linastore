@@ -211,15 +211,14 @@ button:disabled {
 
 /* ✅ ITEM AKTIF (bisa ditukar) */
 .item-row.aktif {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.82);
   border: 2px solid #7fb3e6;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 /* ❌ ITEM NONAKTIF */
 .item-row.nonaktif {
-  background: #f2f2f2;
-  opacity: 0.6;
+  background: rgba(242, 242, 242, 0.78);
   border: 2px dashed #ccc;
 }
 
@@ -238,4 +237,41 @@ button:disabled {
 
 .item-text {
   flex: 1; /* 🔥 ini yang bikin tombol selalu ke kanan */
+}
+
+.item-row {
+  position: relative;
+  overflow: hidden;
+}
+
+.item-text,
+.btn-tukar {
+  position: relative;
+  z-index: 1;
+}
+
+.item-text {
+  text-align: left;
+}
+
+.badge-jenis {
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(41, 20, 88, 0.08);
+  color: #291458;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.item {
+  margin-top: 12px;
+  border-radius: 14px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* full div.item */
+  position: relative;
 }
