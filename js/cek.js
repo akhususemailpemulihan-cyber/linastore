@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbzkyX7uXRTu7YwrIPcmCNz10oinjSHvJ9W6O0kVUDZZ8vOfkcAYWdjBP29v2PwFk-j4/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbwtuvFNOq27iITy5iPVVMC1QP-8r-fVZOyl98YxNyl-Z-_IDz42EQn2r1i6w0RppySn/exec";
 
 function cekPoin() {
   const id = document.getElementById("inputId").value;
@@ -9,7 +9,7 @@ function cekPoin() {
   // 🔥 disable tombol
   document.querySelector("button").disabled = true;
 
-  fetch(API_URL + "?id=" + id)
+  fetch(API_URL + "?id=" + id
     .then(res => res.json())
     .then(data => {
       localStorage.setItem("poin", data.poin);
