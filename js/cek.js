@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbwtuvFNOq27iITy5iPVVMC1QP-8r-fVZOyl98YxNyl-Z-_IDz42EQn2r1i6w0RppySn/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbzxOi4XTYdmUoRVX3UR14OfL-IAe0x7txZnhEvyma1X3K0RbujVD84VBNYWrOJNFOeH/exec";
 
 function cekPoin() {
   const id = document.getElementById("inputId").value;
